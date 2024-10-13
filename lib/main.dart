@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:trend_zen/screens/auth_ui/splash_screen.dart';
-import 'package:trend_zen/screens/user_panel/main_screen.dart';
 
 void main() {
   runApp(const MyApp());
