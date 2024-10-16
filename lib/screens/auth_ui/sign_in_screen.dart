@@ -15,7 +15,9 @@ class SignInScreen extends StatelessWidget {
           title: const Text('sign In'),
         ),
         body: Column(
-          children: [Lottie.asset('assets/images/splashicon.json')],
+          children: [Lottie.asset('assets/images/splashicon.json'),
+          Text('Sign')
+          ],
         ),
       );
     });
