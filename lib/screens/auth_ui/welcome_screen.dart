@@ -82,7 +82,7 @@ class WelcomeScreen extends StatelessWidget {
                   icon: Image.asset(
                     'assets/images/gmail(1).png',
                   ),
-                  label: const Text('Sign in with google',
+                  label: const Text('Sign in with Gmail',
                       style: TextStyle(
                         color: AppConstant.appTextColor,
                       )),
