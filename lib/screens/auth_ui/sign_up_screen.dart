@@ -3,11 +3,10 @@ import 'package:flutter_keyboard_visibility/flutter_keyboard_visibility.dart';
 import 'package:get/get_core/get_core.dart';
 import 'package:get/get_navigation/get_navigation.dart';
 import 'package:lottie/lottie.dart';
-import 'package:trend_zen/screens/auth_ui/sign_up_screen.dart';
 import 'package:trend_zen/utils/app_constant.dart';
 
-class SignInScreen extends StatelessWidget {
-  const SignInScreen({super.key});
+class SignUpScreen extends StatelessWidget {
+  const SignUpScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +16,7 @@ class SignInScreen extends StatelessWidget {
         appBar: AppBar(
           backgroundColor: AppConstant.backgroundColor,
           title: const Text(
-            'signIn',
+            'signUp',
             style: TextStyle(
                 fontSize: 25,
                 fontWeight: FontWeight.bold,
@@ -27,7 +26,29 @@ class SignInScreen extends StatelessWidget {
         ),
         body: Column(
           children: [
-            Lottie.asset('assets/images/splashicon.json'),
+            const Text(
+              'Welcome to my app',
+              style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  color: Colors.redAccent,
+                  fontSize: 20),
+            ),
+            const SizedBox(height: 20),
+            Container(
+              margin: const EdgeInsets.symmetric(horizontal: 5.0),
+              width: Get.width,
+              child: Padding(
+                padding: const EdgeInsets.all(12.0),
+                child: TextFormField(
+                  keyboardType: TextInputType.emailAddress,
+                  decoration: InputDecoration(
+                      prefixIcon: const Icon(Icons.email),
+                      hintText: 'Email',
+                      border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(10))),
+                ),
+              ),
+            ),
             Container(
               margin: const EdgeInsets.symmetric(horizontal: 5.0),
               width: Get.width,
@@ -36,7 +57,21 @@ class SignInScreen extends StatelessWidget {
                 child: TextFormField(
                   decoration: InputDecoration(
                       prefixIcon: const Icon(Icons.email),
-                      hintText: 'Email',
+                      hintText: 'UserName',
+                      border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(10))),
+                ),
+              ),
+            ),
+            Container(
+              margin: const EdgeInsets.symmetric(horizontal: 5.0),
+              width: Get.width,
+              child: Padding(
+                padding: const EdgeInsets.all(12.0),
+                child: TextFormField(
+                  decoration: InputDecoration(
+                      prefixIcon: const Icon(Icons.email),
+                      hintText: 'Phone',
                       border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(10))),
                 ),
@@ -82,7 +117,7 @@ class SignInScreen extends StatelessWidget {
                 child: TextButton(
                   onPressed: () {},
                   child: const Text(
-                    'SIGN IN',
+                    'SIGN UP',
                     style: TextStyle(
                       color: AppConstant.appTextColor,
                     ),
@@ -91,30 +126,21 @@ class SignInScreen extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 5),
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                const Text(
-                  "Don't have an account?",
+                Text(
+                  "Already have an account?",
                   style: TextStyle(
                       fontWeight: FontWeight.bold, color: Colors.redAccent),
                 ),
-                const SizedBox(
+                SizedBox(
                   width: 5,
                 ),
-                InkWell(
-                  onTap: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => const SignUpScreen(),
-                        ));
-                  },
-                  child: const Text(
-                    'Sign Up',
-                    style: TextStyle(
-                        fontWeight: FontWeight.bold, color: Colors.redAccent),
-                  ),
+                Text(
+                  'Sign IN',
+                  style: TextStyle(
+                      fontWeight: FontWeight.bold, color: Colors.redAccent),
                 )
               ],
             )
