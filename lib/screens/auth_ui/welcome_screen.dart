@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get_core/get_core.dart';
 import 'package:get/get_navigation/get_navigation.dart';
 import 'package:lottie/lottie.dart';
+import 'package:trend_zen/screens/auth_ui/sign_in_screen.dart';
 import 'package:trend_zen/utils/app_constant.dart';
 
 class WelcomeScreen extends StatelessWidget {
@@ -53,7 +54,13 @@ class WelcomeScreen extends StatelessWidget {
               margin: const EdgeInsets.only(top: 20),
               child: TextButton.icon(
                 style: const ButtonStyle(),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) =>const SignInScreen(),
+                      ));
+                },
                 icon: Image.asset(
                   'assets/images/google(1).png',
                 ),
