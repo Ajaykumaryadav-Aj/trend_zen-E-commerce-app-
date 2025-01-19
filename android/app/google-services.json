@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "1023081342727",
+    "project_id": "mytrend-zen",
+    "storage_bucket": "mytrend-zen.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1023081342727:android:8feea6528c267ae229c7a2",
+        "android_client_info": {
+          "package_name": "com.example.trend_zen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1023081342727-p567m4cukinlv3j1c0953hatvdnhv3as.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.trend_zen",
+            "certificate_hash": "7529426d0e463153598eccc67ed5dd6cb5432c91"
+          }
+        },
+        {
+          "client_id": "1023081342727-mlira99o5dm97gde2ah0tejvvvu2tdcs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjRBFy-eMs6v0Mt0WTBF2vAZG37EhFKVc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1023081342727-mlira99o5dm97gde2ah0tejvvvu2tdcs.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1023081342727-4prn68peo3fcadcvm1t3jck86pmncnf0.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.trendZen"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

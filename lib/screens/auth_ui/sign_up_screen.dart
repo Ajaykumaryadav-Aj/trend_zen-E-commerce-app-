@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_keyboard_visibility/flutter_keyboard_visibility.dart';
 import 'package:get/get_core/get_core.dart';
 import 'package:get/get_navigation/get_navigation.dart';
-import 'package:lottie/lottie.dart';
 import 'package:trend_zen/utils/app_constant.dart';
 
 class SignUpScreen extends StatelessWidget {
@@ -31,7 +30,7 @@ class SignUpScreen extends StatelessWidget {
                 'Welcome to my app',
                 style: TextStyle(
                     fontWeight: FontWeight.bold,
-                    color: Colors.redAccent,
+                    color: Color.fromARGB(255, 110, 25, 25),
                     fontSize: 20),
               ),
               const SizedBox(height: 50),
